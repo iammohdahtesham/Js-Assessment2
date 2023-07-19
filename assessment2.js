@@ -9,7 +9,7 @@ let n =arr.reduce((acc,element)=>{
     if(!acc.includes(element)){  // checking if acc already include the element or not to remove the duplicacy 
       acc.push(element)
 }  
-return acc  // acc will have the unqie element
+return acc  // acc will have the unique element
 },[])
 console.log(n)
 
@@ -63,7 +63,7 @@ var library = [
     let output=library.sort((a,b)=>(a.title > b.title) ? 1 : -1)
     console.log(output)
     
-    // Explaination -- Using sort method with the comparison function and sorting it in ascending order 
+    // Explaination -- Using sort method with the comparison function and sorting it in alphabetical order 
 
 
 
@@ -113,7 +113,7 @@ let input= [“Test”, true, null, false, 0,]
 let output = input.filter((element)=>{
     
     // Pass the conditon of true  and return the element
-    if(element){
+    if(element){ //null, false, and 0 will not go in if block and hence these won't be returned
         return element
     }
 })
